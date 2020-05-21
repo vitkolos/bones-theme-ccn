@@ -17,9 +17,10 @@
     					'fallback_cb' => 'bones_footer_links_fallback'  // fallback function
 						)); ?>
 					</nav>
-
-					<p class="source-org copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?>.</p>
-
+					<div class="web-info">
+						<p><a href="/"><?php bloginfo( 'name' ); ?> – <?php bloginfo( 'description' ); ?></a></p>
+						<p class="last-p">Webové stránky vytvořil <a href="https://www.kolos.ga" target="_blank">Vít Kološ</a>.</p>
+					</div>
 				</div>
 
 			</footer>

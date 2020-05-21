@@ -1,0 +1,425 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Bones (Rename Me!)\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-05-20 19:45+0000\n"
+"PO-Revision-Date: 2020-05-21 07:45+0000\n"
+"Last-Translator: \n"
+"Language-Team: Čeština\n"
+"Language: cs_CZ\n"
+"Plural-Forms: nplurals=3; plural=( n == 1 ) ? 0 : ( n >= 2 && n <= 4 ) ? 1 : "
+"2;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.3.4; wp-5.4.1"
+
+#: 404.php:13
+msgid "Epic 404 - Article Not Found"
+msgstr "Error 404 – článek nenalezen"
+
+#: 404.php:19
+msgid ""
+"The article you were looking for was not found, but maybe try looking again!"
+msgstr ""
+"Článek, který jste hledali, nebyl nalezen, ale možná zkuste hledat znova!"
+
+#: 404.php:31
+msgid "This is the 404.php template."
+msgstr ""
+
+#: archive-custom_type.php:33
+#, php-format
+msgid ""
+"Posted <time class=\"updated\" datetime=\"%1$s\" itemprop=\"datePublished\">"
+"%2$s</time> by <span class=\"author\">%3$s</span>"
+msgstr ""
+"<time class=\"updated\" datetime=\"%1$s\" itemprop=\"datePublished\">"
+"%2$s</time> publikoval <span class=\"author\">%3$s</span>"
+
+#: archive-custom_type.php:33 functions.php:216 taxonomy-custom_cat.php:33
+msgid "F jS, Y"
+msgstr ""
+
+#: archive-custom_type.php:58 archive.php:54 index.php:54
+#: single-custom_type.php:80 single.php:34 taxonomy-custom_cat.php:57
+msgid "Oops, Post Not Found!"
+msgstr "Ajajaj, příspěvek nebyl nalezen!"
+
+#: archive-custom_type.php:61 archive.php:57 index.php:57
+#: single-custom_type.php:83 single.php:37 taxonomy-custom_cat.php:60
+msgid "Uh Oh. Something is missing. Try double checking things."
+msgstr "Hmm, něco nám chybí. Zkuste zkontrolovat, zda hledáte správně."
+
+#: archive-custom_type.php:64
+msgid "This is the error message in the custom posty type archive template."
+msgstr ""
+
+#: archive.php:22 index.php:17 post-formats/format-aside.php:10
+#: post-formats/format-audio.php:10 post-formats/format-chat.php:10
+#: post-formats/format-gallery.php:10 post-formats/format-image.php:10
+#: post-formats/format-link.php:10 post-formats/format-quote.php:10
+#: post-formats/format-status.php:10 post-formats/format-video.php:10
+#: post-formats/format.php:25
+msgid "Posted"
+msgstr "Publikováno"
+
+#: archive.php:26 index.php:21 post-formats/format-aside.php:14
+#: post-formats/format-audio.php:14 post-formats/format-chat.php:14
+#: post-formats/format-gallery.php:14 post-formats/format-image.php:14
+#: post-formats/format-link.php:14 post-formats/format-quote.php:14
+#: post-formats/format-status.php:14 post-formats/format-video.php:14
+#: post-formats/format.php:29
+msgid "by"
+msgstr "od"
+
+#: archive.php:60
+msgid "This is the error message in the archive.php template."
+msgstr ""
+
+#: comments.php:17 index.php:33
+msgid "<span>No</span> Comments"
+msgstr "<span>Žádné</span> komentáře"
+
+#: comments.php:17 index.php:33
+msgid "<span>One</span> Comment"
+msgstr "<span>Jeden</span> komentář"
+
+#: comments.php:17 index.php:33
+msgid "<span>%</span> Comments"
+msgstr "<span>%</span> komentářů"
+
+#: comments.php:27
+msgid "Reply"
+msgstr "Odpovědět"
+
+#: comments.php:38
+msgid "&larr; Previous Comments"
+msgstr "&larr; Předchozí komentáře"
+
+#: comments.php:39
+msgid "More Comments &rarr;"
+msgstr "Více komentářů"
+
+#: comments.php:44
+msgid "Comments are closed."
+msgstr "Komentáře jsou vypnuté."
+
+#: footer.php:9 library/bones.php:213
+msgid "Footer Links"
+msgstr "Odkazy v patičce"
+
+#: functions.php:159
+msgid "Sidebar 1"
+msgstr "Boční lišta 1"
+
+#: functions.php:160
+msgid "The first (primary) sidebar."
+msgstr "První (primární) boční lišta."
+
+#: functions.php:215
+#, php-format
+msgid "<cite class=\"fn\">%1$s</cite> %2$s"
+msgstr "<cite class=\"fn\">%1$s</cite> %2$s"
+
+#: functions.php:215
+msgid "(Edit)"
+msgstr ""
+"(Upravit)\n"
+
+#: functions.php:221
+msgid "Your comment is awaiting moderation."
+msgstr "Váš komentář čeká na moderátora."
+
+#: header.php:62 library/bones.php:212
+msgid "The Main Menu"
+msgstr "Hlavní menu"
+
+#: index.php:37 post-formats/format.php:64
+msgid "filed under"
+msgstr "v rubrice"
+
+#: index.php:39 search.php:40 post-formats/format-aside.php:47
+#: post-formats/format-audio.php:47 post-formats/format-chat.php:47
+#: post-formats/format-gallery.php:47 post-formats/format-image.php:47
+#: post-formats/format-link.php:50 post-formats/format-quote.php:50
+#: post-formats/format-status.php:47 post-formats/format-video.php:47
+#: post-formats/format.php:66
+msgid "Tags:"
+msgstr "Štítky:"
+
+#: index.php:60
+msgid "This is the error message in the index.php template."
+msgstr ""
+
+#. Name of the template
+msgid "Full-width"
+msgstr "Celá šířka"
+
+#: page-custom.php:52 page.php:37 single-custom_type.php:57
+#: post-formats/format-aside.php:38 post-formats/format-audio.php:38
+#: post-formats/format-chat.php:38 post-formats/format-gallery.php:38
+#: post-formats/format-image.php:38 post-formats/format-link.php:38
+#: post-formats/format-quote.php:38 post-formats/format-status.php:38
+#: post-formats/format-video.php:38 post-formats/format.php:54
+msgid "Pages:"
+msgstr "Stránky:"
+
+#: search.php:8
+msgid "Search Results for:"
+msgstr "Výsledky vyhledávání pro:"
+
+#: search.php:19
+#, php-format
+msgid "Posted %1$s by %2$s"
+msgstr "%1$s publikoval %2$s"
+
+#: search.php:30 library/bones.php:296
+msgid "Read more &raquo;"
+msgstr "Číst dál&hellip;"
+
+#: search.php:37 post-formats/format-link.php:48
+#: post-formats/format-quote.php:48
+#, php-format
+msgid "Filed under: %1$s"
+msgstr "V rubrice: %1$s"
+
+#: search.php:54
+msgid "Sorry, No Results."
+msgstr "Bohužel jsme nic takového nenašli."
+
+#: search.php:57
+msgid "Try your search again."
+msgstr "Zkuste hledat znova."
+
+#: search.php:60
+msgid "This is the error message in the search.php template."
+msgstr ""
+
+#: searchform.php:3
+msgid "Search for:"
+msgstr "Hledat:"
+
+#: searchform.php:6
+msgid "Search"
+msgstr "Hledat"
+
+#: sidebar.php:16
+msgid "This is a widget ready area. Add some and they will appear here."
+msgstr "Tohle je oblast pro widgety. Když nějaké přidáte, objeví se tady."
+
+#: single-custom_type.php:34 taxonomy-custom_cat.php:33
+#, php-format
+msgid ""
+"Posted <time class=\"updated\" datetime=\"%1$s\" itemprop=\"datePublished\">"
+"%2$s</time> by <span class=\"author\">%3$s</span> <span class=\"amp\">"
+"&</span> filed under %4$s."
+msgstr ""
+"<time class=\"updated\" datetime=\"%1$s\" itemprop=\"datePublished\">"
+"%2$s</time> publikoval <span class=\"author\">%3$s</span> do rubriky %4$s."
+
+#: single-custom_type.php:66
+msgid "Custom Tags:"
+msgstr "Vlastní štítky:"
+
+#: single-custom_type.php:86
+msgid "This is the error message in the single-custom_type.php template."
+msgstr ""
+
+#: single.php:40
+msgid "This is the error message in the single.php template."
+msgstr ""
+
+#: taxonomy-custom_cat.php:23
+msgid "Posts Categorized:"
+msgstr "Příspěvky v kategoriích:"
+
+#: taxonomy-custom_cat.php:39
+msgid "Read More &raquo;"
+msgstr ""
+"Číst dál&hellip;\n"
+
+#: taxonomy-custom_cat.php:63
+msgid "This is the error message in the taxonomy-custom_cat.php template."
+msgstr ""
+
+#: library/admin.php:82
+msgid "j F Y @ g:i a"
+msgstr ""
+
+#: library/admin.php:94
+msgid "Recently on Themble (Customize on admin.php)"
+msgstr ""
+
+#: library/admin.php:141
+msgid ""
+"<span id=\"footer-thankyou\">Developed by <a href=\"http://yoursite.com\" "
+"target=\"_blank\">Your Site Name</a></span>. Built using <a href=\"http:"
+"//themble.com/bones\" target=\"_blank\">Bones</a>."
+msgstr ""
+
+#: library/bones.php:251
+msgid "No Related Posts Yet!"
+msgstr "Zatím tady nemáme žádné související příspěvky!"
+
+#: library/bones.php:296
+msgid "Read "
+msgstr "Číst"
+
+#: library/custom-post-type.php:31
+msgid "Custom Types"
+msgstr "Vlastní typy"
+
+#: library/custom-post-type.php:32
+msgid "Custom Post"
+msgstr "Vlastní příspěvek"
+
+#: library/custom-post-type.php:33
+msgid "All Custom Posts"
+msgstr "Všechny vlastní příspěvky"
+
+#: library/custom-post-type.php:34
+msgid "Add New"
+msgstr "Přidat nový"
+
+#: library/custom-post-type.php:35
+msgid "Add New Custom Type"
+msgstr "Přidat nový vlastní typ"
+
+#: library/custom-post-type.php:36
+msgid "Edit"
+msgstr "Upravit"
+
+#: library/custom-post-type.php:37
+msgid "Edit Post Types"
+msgstr "Upravit typy příspěvků"
+
+#: library/custom-post-type.php:38
+msgid "New Post Type"
+msgstr "Nový typ příspěvku"
+
+#: library/custom-post-type.php:39
+msgid "View Post Type"
+msgstr "Zobrazit typ příspěvku"
+
+#: library/custom-post-type.php:40
+msgid "Search Post Type"
+msgstr "Hledat typ příspěvku"
+
+#: library/custom-post-type.php:41
+msgid "Nothing found in the Database."
+msgstr "V databázi nebylo nic nalezeno."
+
+#: library/custom-post-type.php:42
+msgid "Nothing found in Trash"
+msgstr "Koš je prázdný."
+
+#: library/custom-post-type.php:45
+msgid "This is the example custom post type"
+msgstr ""
+
+#: library/custom-post-type.php:82
+msgid "Custom Categories"
+msgstr "Vlastní rubriky"
+
+#: library/custom-post-type.php:83
+msgid "Custom Category"
+msgstr "Vlastní rubrika"
+
+#: library/custom-post-type.php:84
+msgid "Search Custom Categories"
+msgstr "Hledat mezi vlastními rubrikami"
+
+#: library/custom-post-type.php:85
+msgid "All Custom Categories"
+msgstr "Všechny vlastní kategorie"
+
+#: library/custom-post-type.php:86
+msgid "Parent Custom Category"
+msgstr "Nadřazená vlastní kategorie"
+
+#: library/custom-post-type.php:87
+msgid "Parent Custom Category:"
+msgstr "Nadřazená vlastní kategorie:"
+
+#: library/custom-post-type.php:88
+msgid "Edit Custom Category"
+msgstr "Upravit vlastní rubriku"
+
+#: library/custom-post-type.php:89
+msgid "Update Custom Category"
+msgstr "Aktualizovat vlastní kategorii"
+
+#: library/custom-post-type.php:90
+msgid "Add New Custom Category"
+msgstr "Přidat novou vlastní kategorii"
+
+#: library/custom-post-type.php:91
+msgid "New Custom Category Name"
+msgstr "Název nové vlastní kategorie"
+
+#: library/custom-post-type.php:105
+msgid "Custom Tags"
+msgstr "Vlastní štítky"
+
+#: library/custom-post-type.php:106
+msgid "Custom Tag"
+msgstr "Vlastní štítek"
+
+#: library/custom-post-type.php:107
+msgid "Search Custom Tags"
+msgstr "Hledat mezi vlastními štítky"
+
+#: library/custom-post-type.php:108
+msgid "All Custom Tags"
+msgstr "Všechny vlastní štítky"
+
+#: library/custom-post-type.php:109
+msgid "Parent Custom Tag"
+msgstr "Nadřazený vlastní štítek"
+
+#: library/custom-post-type.php:110
+msgid "Parent Custom Tag:"
+msgstr "Nadřazený vlastní štítek:"
+
+#: library/custom-post-type.php:111
+msgid "Edit Custom Tag"
+msgstr "Upravit vlastní štítek"
+
+#: library/custom-post-type.php:112
+msgid "Update Custom Tag"
+msgstr "Aktualizovat vlastní štítek"
+
+#: library/custom-post-type.php:113
+msgid "Add New Custom Tag"
+msgstr "Přidat nový vlastní štítek"
+
+#: library/custom-post-type.php:114
+msgid "New Custom Tag Name"
+msgstr "Název nového vlastního štítku"
+
+#. Name of the theme
+msgid "Bones (Rename Me!)"
+msgstr ""
+
+#. Description of the theme
+msgid ""
+"This site was built using the Bones Development Theme. For more information "
+"about Bones or to view documentation, you can visit the <a href=\"https:"
+"//github.com/eddiemachado/bones/issues\" title=\"Bones Issues\">Bones "
+"Issues</a> page on Github. You'll want to customize this for your clients "
+"with your own information."
+msgstr ""
+
+#. URI of the theme
+msgid "http://www.themble.com/bones"
+msgstr ""
+
+#. Author of the theme
+msgid "Your Name Here"
+msgstr ""
+
+#. Author URI of the theme
+msgid "http://www.yoururlhere.com"
+msgstr ""
