@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Bones (Rename Me!)\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-22 07:26+0000\n"
-"PO-Revision-Date: 2020-05-22 07:26+0000\n"
+"POT-Creation-Date: 2020-05-22 07:27+0000\n"
+"PO-Revision-Date: 2020-05-22 07:27+0000\n"
 "Last-Translator: \n"
 "Language-Team: Čeština\n"
 "Language: cs_CZ\n"
@@ -376,7 +376,7 @@ msgid "Toto je šablona vytvořená na míru pro Med z Luhů."
 msgstr ""
 
 #. URI of the theme
-msgid "https://www.medzluhu.cz/"
+msgid "https://www.medzluhu.cz"
 msgstr ""
 
 #. Author of the theme

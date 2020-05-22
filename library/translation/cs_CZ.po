@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Bones (Rename Me!)\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-22 07:27+0000\n"
-"PO-Revision-Date: 2020-05-22 07:27+0000\n"
+"POT-Creation-Date: 2020-05-22 19:20+0000\n"
+"PO-Revision-Date: 2020-05-22 19:21+0000\n"
 "Last-Translator: \n"
 "Language-Team: Čeština\n"
 "Language: cs_CZ\n"
@@ -178,12 +178,8 @@ msgid "Try your search again."
 msgstr "Zkuste hledat znova."
 
 #: searchform.php:3
-msgid "Search for:"
-msgstr "Hledat:"
-
-#: searchform.php:6
-msgid "Search"
-msgstr "Hledat"
+msgid "Search for…"
+msgstr "Hledat…"
 
 #: sidebar.php:16
 msgid "This is a widget ready area. Add some and they will appear here."
