@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Bones (Rename Me!)\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-20 19:45+0000\n"
-"PO-Revision-Date: 2020-05-21 07:45+0000\n"
+"POT-Creation-Date: 2020-05-22 07:26+0000\n"
+"PO-Revision-Date: 2020-05-22 07:26+0000\n"
 "Last-Translator: \n"
 "Language-Team: Čeština\n"
 "Language: cs_CZ\n"
@@ -25,10 +25,6 @@ msgid ""
 msgstr ""
 "Článek, který jste hledali, nebyl nalezen, ale možná zkuste hledat znova!"
 
-#: 404.php:31
-msgid "This is the 404.php template."
-msgstr ""
-
 #: archive-custom_type.php:33
 #, php-format
 msgid ""
@@ -38,7 +34,7 @@ msgstr ""
 "<time class=\"updated\" datetime=\"%1$s\" itemprop=\"datePublished\">"
 "%2$s</time> publikoval <span class=\"author\">%3$s</span>"
 
-#: archive-custom_type.php:33 functions.php:216 taxonomy-custom_cat.php:33
+#: archive-custom_type.php:33 functions.php:222 taxonomy-custom_cat.php:33
 msgid "F jS, Y"
 msgstr ""
 
@@ -51,10 +47,6 @@ msgstr "Ajajaj, příspěvek nebyl nalezen!"
 #: single-custom_type.php:83 single.php:37 taxonomy-custom_cat.php:60
 msgid "Uh Oh. Something is missing. Try double checking things."
 msgstr "Hmm, něco nám chybí. Zkuste zkontrolovat, zda hledáte správně."
-
-#: archive-custom_type.php:64
-msgid "This is the error message in the custom posty type archive template."
-msgstr ""
 
 #: archive.php:22 index.php:17 post-formats/format-aside.php:10
 #: post-formats/format-audio.php:10 post-formats/format-chat.php:10
@@ -73,10 +65,6 @@ msgstr "Publikováno"
 #: post-formats/format.php:29
 msgid "by"
 msgstr "od"
-
-#: archive.php:60
-msgid "This is the error message in the archive.php template."
-msgstr ""
 
 #: comments.php:17 index.php:33
 msgid "<span>No</span> Comments"
@@ -110,25 +98,25 @@ msgstr "Komentáře jsou vypnuté."
 msgid "Footer Links"
 msgstr "Odkazy v patičce"
 
-#: functions.php:159
+#: functions.php:165
 msgid "Sidebar 1"
 msgstr "Boční lišta 1"
 
-#: functions.php:160
+#: functions.php:166
 msgid "The first (primary) sidebar."
 msgstr "První (primární) boční lišta."
 
-#: functions.php:215
+#: functions.php:221
 #, php-format
 msgid "<cite class=\"fn\">%1$s</cite> %2$s"
 msgstr "<cite class=\"fn\">%1$s</cite> %2$s"
 
-#: functions.php:215
+#: functions.php:221
 msgid "(Edit)"
 msgstr ""
 "(Upravit)\n"
 
-#: functions.php:221
+#: functions.php:227
 msgid "Your comment is awaiting moderation."
 msgstr "Váš komentář čeká na moderátora."
 
@@ -149,15 +137,11 @@ msgstr "v rubrice"
 msgid "Tags:"
 msgstr "Štítky:"
 
-#: index.php:60
-msgid "This is the error message in the index.php template."
-msgstr ""
-
 #. Name of the template
 msgid "Full-width"
 msgstr "Celá šířka"
 
-#: page-custom.php:52 page.php:37 single-custom_type.php:57
+#: page-fullwidth.php:52 page.php:37 single-custom_type.php:57
 #: post-formats/format-aside.php:38 post-formats/format-audio.php:38
 #: post-formats/format-chat.php:38 post-formats/format-gallery.php:38
 #: post-formats/format-image.php:38 post-formats/format-link.php:38
@@ -193,10 +177,6 @@ msgstr "Bohužel jsme nic takového nenašli."
 msgid "Try your search again."
 msgstr "Zkuste hledat znova."
 
-#: search.php:60
-msgid "This is the error message in the search.php template."
-msgstr ""
-
 #: searchform.php:3
 msgid "Search for:"
 msgstr "Hledat:"
@@ -223,14 +203,6 @@ msgstr ""
 msgid "Custom Tags:"
 msgstr "Vlastní štítky:"
 
-#: single-custom_type.php:86
-msgid "This is the error message in the single-custom_type.php template."
-msgstr ""
-
-#: single.php:40
-msgid "This is the error message in the single.php template."
-msgstr ""
-
 #: taxonomy-custom_cat.php:23
 msgid "Posts Categorized:"
 msgstr "Příspěvky v kategoriích:"
@@ -239,10 +211,6 @@ msgstr "Příspěvky v kategoriích:"
 msgid "Read More &raquo;"
 msgstr ""
 "Číst dál&hellip;\n"
-
-#: taxonomy-custom_cat.php:63
-msgid "This is the error message in the taxonomy-custom_cat.php template."
-msgstr ""
 
 #: library/admin.php:82
 msgid "j F Y @ g:i a"
@@ -400,26 +368,21 @@ msgid "New Custom Tag Name"
 msgstr "Název nového vlastního štítku"
 
 #. Name of the theme
-msgid "Bones (Rename Me!)"
+msgid "Med z Luhů"
 msgstr ""
 
 #. Description of the theme
-msgid ""
-"This site was built using the Bones Development Theme. For more information "
-"about Bones or to view documentation, you can visit the <a href=\"https:"
-"//github.com/eddiemachado/bones/issues\" title=\"Bones Issues\">Bones "
-"Issues</a> page on Github. You'll want to customize this for your clients "
-"with your own information."
+msgid "Toto je šablona vytvořená na míru pro Med z Luhů."
 msgstr ""
 
 #. URI of the theme
-msgid "http://www.themble.com/bones"
+msgid "https://www.medzluhu.cz/"
 msgstr ""
 
 #. Author of the theme
-msgid "Your Name Here"
+msgid "Vít Kološ"
 msgstr ""
 
 #. Author URI of the theme
-msgid "http://www.yoururlhere.com"
+msgid "https://www.kolos.ga"
 msgstr ""
