@@ -1,6 +1,6 @@
 /*!
  * baguetteBox.js
- * @author  feimosi
+ * @author	feimosi
  * @version 1.11.1
  * @url https://github.com/feimosi/baguetteBox.js
  */
@@ -10,24 +10,24 @@
 	By Vladimir Smitka, https://lynt.cz
 */
 jQuery(document).ready(function($) {
-    if($('.wp-block-image').length ) { 
-        baguetteBox.run('.wp-block-image', {
-            captions: function(element) {
-              if(element.parentNode.getElementsByTagName('figcaption').length) {
-                return element.parentNode.getElementsByTagName('figcaption')[0].textContent;
-              }
-            }
-        });
-        console.log('✔');
-    }
-    
-    if($('.wp-block-gallery').length ) { 
-        baguetteBox.run('.wp-block-gallery', {
-            captions: function(element) {
-              if(element.parentNode.getElementsByTagName('figcaption').length) {
-                return element.parentNode.getElementsByTagName('figcaption')[0].textContent;
-              }
-            }
-        });
-    }
+		if($('.wp-block-image').length ) { 
+				baguetteBox.run('.wp-block-image', {
+						captions: function(element) {
+							if(element.parentNode.getElementsByTagName('figcaption').length) {
+								return element.parentNode.getElementsByTagName('figcaption')[0].textContent;
+							}
+						}
+				});
+				console.log('✔');
+		}
+		
+		if($('.wp-block-gallery').length ) { 
+				baguetteBox.run('.wp-block-gallery', {
+						captions: function(element) {
+							if(element.parentNode.getElementsByTagName('figcaption').length) {
+								return element.parentNode.getElementsByTagName('figcaption')[0].textContent;
+							}
+						}
+				});
+		}
 });

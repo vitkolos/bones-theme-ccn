@@ -10,18 +10,18 @@
  */
 function naswpBaguetteBoxModifyLinkDestinationDefault(settings, name) {
 
-  if (name === 'core/gallery') {
-    settings.attributes.linkTo.default = "media";
-  }
-  if (name === 'core/image') {
-    settings.attributes.linkDestination.default = "media";
-  }
+	if (name === 'core/gallery') {
+		settings.attributes.linkTo.default = "media";
+	}
+	if (name === 'core/image') {
+		settings.attributes.linkDestination.default = "media";
+	}
 
-  return settings;
+	return settings;
 }
 
 wp.hooks.addFilter(
-  "blocks.registerBlockType",
-  "naswp/BaguetteBox",
-  naswpBaguetteBoxModifyLinkDestinationDefault
+	"blocks.registerBlockType",
+	"naswp/BaguetteBox",
+	naswpBaguetteBoxModifyLinkDestinationDefault
 );
