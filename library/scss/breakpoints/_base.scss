@@ -21,8 +21,8 @@ body {
 	line-height: 1.5;
 	color: $text-color;
 	background-color: $white;
-  	-webkit-font-smoothing: antialiased;
-  	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 // #container {
@@ -44,41 +44,111 @@ WORDPRESS BODY CLASSES
 style a page via class
 ********************/
 
-.rtl {}                           /* for sites that are read right to left (i.e. hebrew) */
-.home {}                          /* home page */
-.blog {}                          /* blog template page */
-.archive {}                       /* archive page */
-.date {}                          /* date archive page */
-	.date-paged-1 {}                /* replace the number to the corresponding page number */
-.search {}                        /* search page */
-	.search-results {}              /* search result page */
-	.search-no-results {}           /* no results search page */
-	.search-paged-1 {}              /* individual paged search (i.e. body.search-paged-3) */
-.error404 {}                      /* 404 page */
-.single {}                        /* single post page */
-	.postid-1 {}                    /* individual post page by id (i.e. body.postid-73) */
-	.single-paged-1 {}              /* individual paged single (i.e. body.single-paged-3) */
-.attachment {}                    /* attatchment page */
-	.attachmentid-1 {}              /* individual attatchment page (i.e. body.attachmentid-763) */
-	.attachment-mime-type {}        /* style mime type pages */
-.author {}                        /* author page */
-	.author-nicename {}             /* user nicename (i.e. body.author-samueladams) */
-	.author-paged-1 {}              /* paged author archives (i.e. body.author-paged-4) for page 4 */
-.category {}                      /* category page */
-	.category-1 {}                  /* individual category page (i.e. body.category-6) */
-	.category-paged-1 {}            /* replace the number to the corresponding page number */
-.tag {}                           /* tag page */
-	.tag-slug {}                    /* individual tag page (i.e. body.tag-news) */
-	.tag-paged-1 {}                 /* replace the number to the corresponding page number */
-.page-template {}                 /* custom page template page */
-	.page-template-page-php {}      /* individual page template (i.e. body.page-template-contact-php */
-	.page-paged-1 {}                /* replace the number to the corresponding page number */
-	.page-parent {}                 /* parent page template */
-	.page-child {}                  /* child page template */
-	.parent-pageid-1 {}             /* replace the number to the corresponding page number */
-.logged-in {}                     /* if user is logged in */
-.paged {}                         /* paged items like search results or archives */
-	.paged-1 {}                     /* individual paged (i.e. body.paged-3) */
+.rtl {}
+
+/* for sites that are read right to left (i.e. hebrew) */
+.home {}
+
+/* home page */
+.blog {}
+
+/* blog template page */
+.archive {}
+
+/* archive page */
+.date {}
+
+/* date archive page */
+.date-paged-1 {}
+
+/* replace the number to the corresponding page number */
+.search {}
+
+/* search page */
+.search-results {}
+
+/* search result page */
+.search-no-results {}
+
+/* no results search page */
+.search-paged-1 {}
+
+/* individual paged search (i.e. body.search-paged-3) */
+.error404 {}
+
+/* 404 page */
+.single {}
+
+/* single post page */
+.postid-1 {}
+
+/* individual post page by id (i.e. body.postid-73) */
+.single-paged-1 {}
+
+/* individual paged single (i.e. body.single-paged-3) */
+.attachment {}
+
+/* attatchment page */
+.attachmentid-1 {}
+
+/* individual attatchment page (i.e. body.attachmentid-763) */
+.attachment-mime-type {}
+
+/* style mime type pages */
+.author {}
+
+/* author page */
+.author-nicename {}
+
+/* user nicename (i.e. body.author-samueladams) */
+.author-paged-1 {}
+
+/* paged author archives (i.e. body.author-paged-4) for page 4 */
+.category {}
+
+/* category page */
+.category-1 {}
+
+/* individual category page (i.e. body.category-6) */
+.category-paged-1 {}
+
+/* replace the number to the corresponding page number */
+.tag {}
+
+/* tag page */
+.tag-slug {}
+
+/* individual tag page (i.e. body.tag-news) */
+.tag-paged-1 {}
+
+/* replace the number to the corresponding page number */
+.page-template {}
+
+/* custom page template page */
+.page-template-page-php {}
+
+/* individual page template (i.e. body.page-template-contact-php */
+.page-paged-1 {}
+
+/* replace the number to the corresponding page number */
+.page-parent {}
+
+/* parent page template */
+.page-child {}
+
+/* child page template */
+.parent-pageid-1 {}
+
+/* replace the number to the corresponding page number */
+.logged-in {}
+
+/* if user is logged in */
+.paged {}
+
+/* paged items like search results or archives */
+.paged-1 {}
+
+/* individual paged (i.e. body.paged-3) */
 
 /*********************
 LAYOUT & GRID STYLES
@@ -93,20 +163,20 @@ LAYOUT & GRID STYLES
 LINK STYLES
 *********************/
 
-a, a:visited {
+a,
+a:visited {
 	color: $link-color;
 	@include transition(color 0.1s);
 
 	/* on hover */
-	&:hover, &:focus {
+	&:hover,
+	&:focus {
 		color: $link-hover;
 		text-decoration: none;
 	}
 
 	/* on click */
-	&:active {
-
-	}
+	&:active {}
 
 	/* mobile tap color */
 	&:link {
@@ -115,7 +185,7 @@ a, a:visited {
 		so it basically works like the :hover selector
 		for mobile devices.
 		*/
-		-webkit-tap-highlight-color : rgba( 0, 0, 0, 0.3 );
+		-webkit-tap-highlight-color: rgba(0, 0, 0, 0.3);
 	}
 }
 
@@ -152,7 +222,16 @@ SEARCH
 H1, H2, H3, H4, H5 STYLES
 ******************************************************************/
 
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5 {
 	text-rendering: optimizelegibility;
 	font-weight: 500;
 	/*
@@ -166,27 +245,32 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 	}
 }
 
-h1, .h1 {
+h1,
+.h1 {
 	font-size: 2.5em;
 	line-height: 1.333em;
 }
 
-h2, .h2 {
+h2,
+.h2 {
 	font-size: 1.75em;
 	line-height: 1.4em;
 	margin-bottom: 0.375em;
 }
 
-h3, .h3 {
+h3,
+.h3 {
 	font-size: 1.125em;
 }
 
-h4, .h4 {
+h4,
+.h4 {
 	font-size: 1.1em;
 	font-weight: 700;
 }
 
-h5, .h5 {
+h5,
+.h5 {
 	font-size: 0.846em;
 	line-height: 2.09em;
 	text-transform: uppercase;
@@ -201,13 +285,13 @@ HEADER STYLES
 	background-color: $primary;
 }
 
-	#logo {
-		margin: 0.75em 0;
+#logo {
+	margin: 0.75em 0;
 
-		a {
-			color: $p-contrast;
-		}
+	a {
+		color: $p-contrast;
 	}
+}
 
 /*********************
 NAVIGATION STYLES
@@ -230,6 +314,7 @@ and more scalable.
 		position: relative;
 
 		a {
+			font-weight: bold;
 			display: block;
 			color: $p-contrast-dis;
 			text-decoration: none;
@@ -241,9 +326,8 @@ and more scalable.
 			the style.scss file where it's relevant. We want to
 			keep this file as small as possible!
 			*/
-			&:hover, &:focus {
-
-			}
+			&:hover,
+			&:focus {}
 		}
 
 		&:first-child {}
@@ -280,7 +364,9 @@ and more scalable.
 
 		}
 
-	} /* end .menu li */
+	}
+
+	/* end .menu li */
 
 	/* highlight current page */
 	li.current-menu-item,
@@ -291,9 +377,13 @@ and more scalable.
 			color: $p-contrast;
 		}
 
-	}  /* end current highlighters */
+	}
 
-} /* end .nav */
+	/* end current highlighters */
+
+}
+
+/* end .nav */
 
 
 /*********************
@@ -304,261 +394,305 @@ POSTS & CONTENT STYLES
 	margin-top: 1.5em;
 }
 
-		.hentry {
-			background-color: $white;
-			border-radius: 3px;
+.hentry {
+	background-color: $white;
+	border-radius: 3px;
 
-			header {
-				padding-bottom: 1.5em;
-			}
+	header {
+		padding-bottom: 1.5em;
+	}
 
-			footer {
-				&.footer-empty {
-					border-top: none;
-					padding-top: 0;
-				}
-
-				p {
-					margin: 0;
-				}
-			}
-
-		} /* end .hentry */
-
-		.single-title,
-		.page-title,
-		.entry-title {
-			margin: 0;
+	footer {
+		&.footer-empty {
+			border-top: none;
+			padding-top: 0;
 		}
 
-		.single-title {}
+		p {
+			margin: 0;
+		}
+	}
 
-		.page-title {}
+}
 
-		.entry-title {}
+/* end .hentry */
 
-		.archive-title {}
+.single-title,
+.page-title,
+.entry-title {
+	margin: 0;
+}
 
-		/* want to style individual post classes? Booya! */
-		.post-id {}         /* post by id (i.e. post-3) */
-		.post {}            /* general post style */
-		.page {}            /* general article on a page style */
-		.attachment {}      /* general style on an attatchment */
-		.sticky {}          /* sticky post style */
-		.hentry {}          /* hentry class */
-		.category-slug {}   /* style by category (i.e. category-videos) */
-		.tag-slug {}        /* style by tag (i.e. tag-news) */
+.single-title {}
 
-		/* post meta */
-		.byline {
+.page-title {}
+
+.entry-title {}
+
+.archive-title {}
+
+/* want to style individual post classes? Booya! */
+.post-id {}
+
+/* post by id (i.e. post-3) */
+.post {}
+
+/* general post style */
+.page {}
+
+/* general article on a page style */
+.attachment {}
+
+/* general style on an attatchment */
+.sticky {}
+
+/* sticky post style */
+.hentry {}
+
+/* hentry class */
+.category-slug {}
+
+/* style by category (i.e. category-videos) */
+.tag-slug {}
+
+/* style by tag (i.e. tag-news) */
+
+/* post meta */
+.byline {
+	color: $meta-gray;
+	font-style: italic;
+	margin: 0;
+
+	time {}
+}
+
+/* entry content */
+.entry-content {
+
+	p,
+	hr {
+		margin: 0 0 1.5em;
+	}
+
+
+	ul,
+	ol,
+	table,
+	dl {}
+
+	ul,
+	ol {
+
+		li {}
+
+	}
+
+	ul {
+
+		li {}
+
+	}
+
+	ol {
+
+		li {}
+
+	}
+
+	table {
+		width: 100%;
+		border: 1px solid $gray;
+		margin-bottom: 1.5em;
+
+		caption {
+			margin: 0 0 7px;
+			font-size: 0.75em;
 			color: $meta-gray;
-			font-style: italic;
-			margin: 0;
-
-			time {}
+			text-transform: uppercase;
+			letter-spacing: 1px;
 		}
+	}
 
-		/* entry content */
-		.entry-content {
+	tr {
+		border-bottom: 1px solid $gray;
 
-			p, hr {
-				margin: 0 0 1.5em;
-			}
+		&:nth-child(even) {
+			background-color: $light-gray;
+		}
+	}
 
+	td {
+		padding: 7px;
+		border-right: 1px solid $gray;
 
-			ul, ol, table, dl {}
+		&:last-child {
+			border-right: 0;
+		}
+	}
 
-			ul, ol {
+	th {
+		background-color: $light-gray;
+		border-bottom: 1px solid $gray;
+		border-right: 1px solid $gray;
 
-				li {}
+		&:last-child {
+			border-right: 0;
+		}
+	}
 
-			}
+	blockquote {
+		margin: 0 0 1.5em 0.75em;
+		padding: 0 0 0 0.75em;
+		border-left: 3px solid $primary;
+		font-style: italic;
 
-			ul {
+		&:before {}
 
-				li {}
+	}
 
-			}
+	dl {}
 
-			ol {
+	dt {}
 
-				li {}
+	dd {
+		margin-left: 0;
+		font-size: 0.9em;
+		color: #787878;
+		margin-bottom: 1.5em;
+	}
 
-			}
+	img {
+		max-width: 100%;
+		height: auto;
+	}
 
-			table {
-				width: 100%;
-				border: 1px solid $gray;
-				margin-bottom: 1.5em;
+	figure {
+		margin-bottom: 1.5em;
+	}
 
-				caption {
-					margin: 0 0 7px;
-					font-size: 0.75em;
-					color: $meta-gray;
-					text-transform: uppercase;
-					letter-spacing: 1px;
-				}
-			}
-
-			tr {
-				border-bottom: 1px solid $gray;
-
-				&:nth-child(even) {
-					background-color: $light-gray;
-				}
-			}
-
-			td {
-				padding: 7px;
-				border-right: 1px solid $gray;
-
-				&:last-child {
-					border-right: 0;
-				}
-			}
-
-			th {
-				background-color: $light-gray;
-				border-bottom: 1px solid $gray;
-				border-right: 1px solid $gray;
-
-				&:last-child {
-					border-right: 0;
-				}
-			}
-
-			blockquote {
-				margin: 0 0 1.5em 0.75em;
-				padding: 0 0 0 0.75em;
-				border-left: 3px solid $primary;
-				font-style: italic;
-
-				&:before {}
-
-			}
-
-			dl {}
-
-			dt {}
-
-			dd {
-				margin-left: 0;
-				font-size: 0.9em;
-				color: #787878;
-				margin-bottom: 1.5em;
-			}
-
-			img {
-				max-width: 100%;
-				height: auto;
-			}
-			
-			figure {
-				margin-bottom: 1.5em;
-			}
-
-			/*
+	/*
 			image alignment on a screen this size may be
 			a bit difficult. It's set to start aligning
 			and floating images at the next breakpoint,
 			but it's up to you. Feel free to change it up.
 			*/
-			.alignleft, img.alignleft {}
-			.alignright, img.alignright {}
-			.aligncenter, img.aligncenter {}
+	.alignleft,
+	img.alignleft {}
 
-			.size-auto,
-			.size-full,
-			.size-large,
-			.size-medium,
-			.size-thumbnail {
-				max-width: 100%;
-				height: auto;
-			}
+	.alignright,
+	img.alignright {}
 
-			pre {
-				background: $black;
-				color: $light-gray;
-				font-size: 0.9em;
-				padding: 1.5em;
-				margin: 0 0 1.5em;
-				border-radius: 3px;
-			}
+	.aligncenter,
+	img.aligncenter {}
 
-		} /* end .entry-content */
-
-		.wp-block-image {
-			margin-bottom: 0;
-		}
-
-		.wp-caption {
-			max-width: 100%;
-			background: #eee;
-			padding: 5px;
-
-			/* images inside wp-caption */
-			img {
-				max-width: 100%;
-				margin-bottom: 0;
-				width: 100%;
-			}
-
-			p.wp-caption-text {
-				font-size: 0.85em;
-				margin: 4px 0 7px;
-				text-align: center;
-			}
-
-		} /* end .wp-caption */
-
-		/* image gallery styles */
-		.gallery {
-
-			dl {
-
-				a {}
-
-				img {}
-
-			}
-
-			dt {}
-
-			dd {}
-
-		} /* end .gallery */
-
-		/* gallery caption styles */
-		.gallery-caption {}
-
-		.size-full {}
-		.size-large {}
-		.size-medium {}
-		.size-thumbnail {}
-
-		.wp-block-image {
-			.aligncenter, .alignleft, .alignright, &.is-resized {
-				& > figcaption {
-					display: block;
-					text-align: center;
-					color: #555d66;
-					font-size: 13px;
-				}
-			}
-		}
-
-		.blocks-gallery-grid, .wp-block-gallery {
-			.blocks-gallery-image, .blocks-gallery-item {
-				figcaption {
-					padding-top: 9px;
-				}
-			}
-		}
-
-	// the tag output
-	.tags {
-		margin: 0;
+	.size-auto,
+	.size-full,
+	.size-large,
+	.size-medium,
+	.size-thumbnail {
+		max-width: 100%;
+		height: auto;
 	}
+
+	pre {
+		background: $black;
+		color: $light-gray;
+		font-size: 0.9em;
+		padding: 1.5em;
+		margin: 0 0 1.5em;
+		border-radius: 3px;
+	}
+
+}
+
+/* end .entry-content */
+
+.wp-block-image {
+	margin-bottom: 0;
+}
+
+.wp-caption {
+	max-width: 100%;
+	background: #eee;
+	padding: 5px;
+
+	/* images inside wp-caption */
+	img {
+		max-width: 100%;
+		margin-bottom: 0;
+		width: 100%;
+	}
+
+	p.wp-caption-text {
+		font-size: 0.85em;
+		margin: 4px 0 7px;
+		text-align: center;
+	}
+
+}
+
+/* end .wp-caption */
+
+/* image gallery styles */
+.gallery {
+
+	dl {
+
+		a {}
+
+		img {}
+
+	}
+
+	dt {}
+
+	dd {}
+
+}
+
+/* end .gallery */
+
+/* gallery caption styles */
+.gallery-caption {}
+
+.size-full {}
+
+.size-large {}
+
+.size-medium {}
+
+.size-thumbnail {}
+
+.wp-block-image {
+
+	.aligncenter,
+	.alignleft,
+	.alignright,
+	&.is-resized {
+		&>figcaption {
+			display: block;
+			text-align: center;
+			color: #555d66;
+			font-size: 13px;
+		}
+	}
+}
+
+.blocks-gallery-grid,
+.wp-block-gallery {
+
+	.blocks-gallery-image,
+	.blocks-gallery-item {
+		figcaption {
+			padding-top: 9px;
+		}
+	}
+}
+
+// the tag output
+.tags {
+	margin: 0;
+}
 
 /******************************************************************
 PAGE NAVI STYLES
@@ -568,71 +702,79 @@ PAGE NAVI STYLES
 .wp-prev-next {
 	margin: 1.5em 0;
 }
-	.pagination{
-    text-align: center;
 
-    ul {
-      display: inline-block;
-      background-color: $white;
-      white-space: nowrap;
-      padding: 0;
-      clear: both;
-      border-radius: 3px;
-    }
+.pagination {
+	text-align: center;
 
-    li {
-      padding: 0;
-      margin: 0;
-      float: left;
-      display: inline;
-      overflow: hidden;
-      border-right: 1px solid $gray;
-    }
+	ul {
+		display: inline-block;
+		background-color: $white;
+		white-space: nowrap;
+		padding: 0;
+		clear: both;
+		border-radius: 3px;
+	}
 
-    a, span {
-      margin: 0;
-      text-decoration: none;
-      padding: 0;
-      line-height: 1em;
-      font-size: 1em;
-      font-weight: normal;
-      padding: 0.75em;
-      min-width: 1em;
-      display: block;
-      color: $link-color;
+	li {
+		padding: 0;
+		margin: 0;
+		float: left;
+		display: inline;
+		overflow: hidden;
+		border-right: 1px solid $gray;
+	}
 
-      &:hover, &:focus {
-      	background-color: $link-color;
-      	color: $white;
-      }
-    }
+	a,
+	span {
+		margin: 0;
+		text-decoration: none;
+		padding: 0;
+		line-height: 1em;
+		font-size: 1em;
+		font-weight: normal;
+		padding: 0.75em;
+		min-width: 1em;
+		display: block;
+		color: $link-color;
 
-    .current{
-    	cursor: default;
-    	color: $text-color;
-
-    	&:hover, &:focus {
-    		background-color: $white;
-    		color: $text-color;
-    	}
-    }
-
-  } /* end .bones_page_navi */
-
-	/* fallback previous & next links */
-	.wp-prev-next {
-
-		ul {}
-
-		.prev-link {
-			float: left;
+		&:hover,
+		&:focus {
+			background-color: $link-color;
+			color: $white;
 		}
+	}
 
-		.next-link {
-			float: right;
+	.current {
+		cursor: default;
+		color: $text-color;
+
+		&:hover,
+		&:focus {
+			background-color: $white;
+			color: $text-color;
 		}
+	}
 
-	} /* end .wp-prev-next */
+}
+
+/* end .bones_page_navi */
+
+/* fallback previous & next links */
+.wp-prev-next {
+
+	ul {}
+
+	.prev-link {
+		float: left;
+	}
+
+	.next-link {
+		float: right;
+	}
+
+}
+
+/* end .wp-prev-next */
 
 /******************************************************************
 COMMENT STYLES
@@ -713,7 +855,9 @@ COMMENT STYLES
 			border-radius: 50%;
 		}
 
-	} /* end .commentlist .vcard */
+	}
+
+	/* end .commentlist .vcard */
 
 	&:last-child {
 		margin-bottom: 0;
@@ -724,17 +868,27 @@ COMMENT STYLES
 
 		li {}
 
-			/* variations */
-			.comment {}
-			.alt {}
-			.odd {}
-			.even {}
-			.depth-1 {}           /* change number for different depth */
-			.byuser {}
-			.bypostauthor {}
-			.comment-author-admin {}
+		/* variations */
+		.comment {}
 
-	} /* end children */
+		.alt {}
+
+		.odd {}
+
+		.even {}
+
+		.depth-1 {}
+
+		/* change number for different depth */
+		.byuser {}
+
+		.bypostauthor {}
+
+		.comment-author-admin {}
+
+	}
+
+	/* end children */
 
 
 	&[class*=depth-] {
@@ -753,76 +907,94 @@ COMMENT STYLES
 	}
 
 	&.depth-2 {}
+
 	&.depth-3 {}
+
 	&.depth-4 {}
+
 	&.depth-5 {}
 
 	/* general comment classes */
 	&.alt {}
+
 	&.odd {
 		background-color: $white;
 	}
+
 	&.even {
 		background: $light-gray;
 	}
+
 	&.parent {}
+
 	&.comment {}
+
 	&.children {}
+
 	&.pingback {}
+
 	&.bypostauthor {}
+
 	&.comment-author {}
+
 	&.comment-author-admin {}
+
 	&.thread-alt {}
+
 	&.thread-odd {}
+
 	&.thread-even {}
 }
 
 
 
 
-	/* comment meta */
-	.comment-meta {
+/* comment meta */
+.comment-meta {
 
-		a {}
+	a {}
 
+}
+
+.commentmetadata {
+
+	a {}
+
+}
+
+/* comment content */
+.comment_content {
+
+	p {
+		margin: 0.7335em 0 1.5em;
+		font-size: 1em;
+		line-height: 1.5em;
 	}
 
-	.commentmetadata {
+}
 
-		a {}
+/* end .commentlist .comment_content */
 
-	}
+/* comment reply link */
+.comment-reply-link {
+	@extend .blue-btn;
+	font-size: 0.9em;
+	float: right;
 
-	/* comment content */
-	.comment_content {
+	&:hover,
+	&:focus {}
 
-		p {
-			margin: 0.7335em 0 1.5em;
-			font-size: 1em;
-			line-height: 1.5em;
-		}
+}
 
-	} /* end .commentlist .comment_content */
+/* end .commentlist .comment-reply-link */
 
-	/* comment reply link */
-	.comment-reply-link {
-		@extend .blue-btn;
-		font-size: 0.9em;
-		float: right;
-
-		&:hover,
-		&:focus {
-		}
-
-	} /* end .commentlist .comment-reply-link */
-
-	/* edit comment link */
-	.comment-edit-link {
-		font-style: italic;
-		margin: 0 7px;
-		text-decoration: none;
-		font-size: 0.9em;
-	}
+/* edit comment link */
+.comment-edit-link {
+	font-style: italic;
+	margin: 0 7px;
+	text-decoration: none;
+	font-size: 0.9em;
+}
 
 
 
@@ -836,59 +1008,59 @@ COMMENT FORM STYLES
 	border-top: 1px solid $light-gray;
 }
 
-	#reply-title {
-		margin: 0;
+#reply-title {
+	margin: 0;
+}
+
+.logged-in-as {
+	color: $meta-gray;
+	font-style: italic;
+	margin: 0;
+
+	a {
+		color: $text-color;
 	}
+}
 
-	.logged-in-as {
-		color: $meta-gray;
-		font-style: italic;
-		margin: 0;
+.comment-form-comment {
+	margin: 1.5em 0 0.75em;
+}
 
-		a {
-			color: $text-color;
-		}
-	}
+.form-allowed-tags {
+	padding: 1.5em;
+	background-color: $light-gray;
+	font-size: 0.9em;
+}
 
-	.comment-form-comment {
-		margin: 1.5em 0 0.75em;
-	}
+/* comment submit button */
+#submit {
+	@extend .blue-btn;
+	float: right;
+	font-size: 1em;
+}
 
-	.form-allowed-tags {
-		padding: 1.5em;
-		background-color: $light-gray;
-		font-size: 0.9em;
-	}
+/* comment form title */
+#comment-form-title {
+	margin: 0 0 1.1em;
+}
 
-	/* comment submit button */
-	#submit {
-		@extend .blue-btn;
-		float: right;
-		font-size: 1em;
-	}
+/* cancel comment reply link */
+#cancel-comment-reply {
+	a {}
+}
 
-	/* comment form title */
-	#comment-form-title {
-		margin: 0 0 1.1em;
-	}
+/* logged in comments */
+.comments-logged-in-as {}
 
-	/* cancel comment reply link */
-	#cancel-comment-reply {
-		a {}
-	}
+/* allowed tags */
+#allowed_tags {
+	margin: 1.5em 10px 0.7335em 0;
+}
 
-	/* logged in comments */
-	.comments-logged-in-as {}
-
-	/* allowed tags */
-	#allowed_tags {
-		margin: 1.5em 10px 0.7335em 0;
-	}
-
-	/* no comments */
-	.nocomments {
-		margin: 0 20px 1.1em;
-	}
+/* no comments */
+.nocomments {
+	margin: 0 20px 1.1em;
+}
 
 /*********************
 SIDEBARS & ASIDES
@@ -896,37 +1068,37 @@ SIDEBARS & ASIDES
 
 .sidebar {}
 
-	.widgettitle {}
+.widgettitle {}
 
-	.widget {
+.widget {
 
-		ul {
+	ul {
 
-			li {
+		li {
 
-				&:first-child {}
+			&:first-child {}
 
-				&:last-child {}
+			&:last-child {}
 
-				a {}
+			a {}
 
-				/* deep nesting */
-				ul {}
-
-			}
+			/* deep nesting */
+			ul {}
 
 		}
 
 	}
 
-	.no-widgets {
-		background-color: $white;
-		padding: 1.5em;
-		text-align: center;
-		border: 1px solid $border-color;
-		border-radius: 2px;
-		margin-bottom: 1.5em;
-	}
+}
+
+.no-widgets {
+	background-color: $white;
+	padding: 1.5em;
+	text-align: center;
+	border: 1px solid $border-color;
+	border-radius: 2px;
+	margin-bottom: 1.5em;
+}
 
 /*********************
 FOOTER STYLES
@@ -962,7 +1134,7 @@ FOOTER STYLES
 	}
 }
 
-	/*
+/*
 	if you checked out the link above:
 	http://www.alistapart.com/articles/organizing-mobile/
 	you'll want to style the footer nav
@@ -971,12 +1143,14 @@ FOOTER STYLES
 	override these styles for the desktop
 	view.
 	*/
-	.footer-links {
+.footer-links {
 
-		ul {
+	ul {
 
-			li {}
+		li {}
 
-		}
+	}
 
-	} /* end .footer-links */
+}
+
+/* end .footer-links */

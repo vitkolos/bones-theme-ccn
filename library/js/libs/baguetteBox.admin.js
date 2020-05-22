@@ -10,18 +10,18 @@
  */
 function naswpBaguetteBoxModifyLinkDestinationDefault(settings, name) {
 
-    if (name ==='core/gallery') {
-        settings.attributes.linkTo.default = "media";
-    }
-    if (name ==='core/image') {
-        settings.attributes.linkDestination.default = "media";
-    }
-  
-    return settings;
+  if (name === 'core/gallery') {
+    settings.attributes.linkTo.default = "media";
   }
-  
-  wp.hooks.addFilter(
-    "blocks.registerBlockType",
-    "naswp/BaguetteBox",
-    naswpBaguetteBoxModifyLinkDestinationDefault
-  );
+  if (name === 'core/image') {
+    settings.attributes.linkDestination.default = "media";
+  }
+
+  return settings;
+}
+
+wp.hooks.addFilter(
+  "blocks.registerBlockType",
+  "naswp/BaguetteBox",
+  naswpBaguetteBoxModifyLinkDestinationDefault
+);

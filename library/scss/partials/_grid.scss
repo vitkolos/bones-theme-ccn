@@ -77,7 +77,9 @@ them however you see fit.
     width: 75%;
   }
 
-} // end mobile styles
+}
+
+// end mobile styles
 
 
 /* Portrait tablet to landscape */
@@ -134,12 +136,14 @@ them however you see fit.
     width: 80%;
   }
 
-} // end tablet
+}
+
+// end tablet
 
 /* Landscape to small desktop */
 @media (min-width: 1030px) {
 
-  .d-all  {
+  .d-all {
     @include grid-col;
     width: 100%;
     padding-right: 0;
@@ -250,4 +254,6 @@ them however you see fit.
     width: 8.33%;
   }
 
-} // end desktop styles
+}
+
+// end desktop styles

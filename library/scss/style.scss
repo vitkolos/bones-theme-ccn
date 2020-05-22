@@ -79,7 +79,9 @@ tweeners.
 	// styles in 481up.scss
 	@import "breakpoints/481up";
 
-} // end of media query
+}
+
+// end of media query
 
 /*********************
 TABLET & SMALLER LAPTOPS
@@ -92,7 +94,9 @@ you can add resource intensive styles.
 	// styles in 768up.scss
 	@import "breakpoints/768up";
 
-} // end of media query
+}
+
+// end of media query
 
 /*********************
 DESKTOP
@@ -105,7 +109,9 @@ you can add resource intensive styles.
 	// styles in 1030up.scss
 	@import "breakpoints/1030up";
 
-} // end of media query
+}
+
+// end of media query
 
 /*********************
 LARGE VIEWING SIZE
@@ -116,7 +122,9 @@ This is for the larger monitors and possibly full screen viewers.
 	// styles in 1240up.scss
 	@import "breakpoints/1240up";
 
-} // end of media query
+}
+
+// end of media query
 
 /*********************
 RETINA (2x RESOLUTION DEVICES)
@@ -125,13 +133,15 @@ other displays with a 2x resolution. You can also create a media
 query for retina AND a certain size if you want. Go Nuts.
 *********************/
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
-       only screen and (min--moz-device-pixel-ratio: 1.5),
-       only screen and (min-device-pixel-ratio: 1.5) {
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5) {
 
 	// styles in 2x.scss
 	@import "breakpoints/2x";
 
-} // end of media query
+}
+
+// end of media query
 
 /*********************
 PRINT STYLESHEET
