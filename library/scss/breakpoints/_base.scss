@@ -25,19 +25,19 @@ body {
   	-moz-osx-font-smoothing: grayscale;
 }
 
-#container {
-	display: flex;
-	flex-direction: column;
-	min-height: 100vh;
+// #container {
+// 	display: flex;
+// 	flex-direction: column;
+// 	min-height: 100vh;
 
-	.admin-bar & {
-		min-height: calc(100vh - 32px)
-	}
-}
+// 	.admin-bar & {
+// 		min-height: calc(100vh - 32px)
+// 	}
+// }
 
-#content {
-	flex: 1;
-}
+// #content {
+// 	flex: 1;
+// }
 
 /********************
 WORDPRESS BODY CLASSES
