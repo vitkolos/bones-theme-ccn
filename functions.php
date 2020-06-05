@@ -141,17 +141,30 @@ function bones_theme_customizer($wp_customize) {
 	// Uncomment the below lines to remove the default customize sections 
 
 	// $wp_customize->remove_section('title_tagline');
-	// $wp_customize->remove_section('colors');
-	// $wp_customize->remove_section('background_image');
+	$wp_customize->remove_section('colors');
+	$wp_customize->remove_section('background_image');
 	// $wp_customize->remove_section('static_front_page');
 	// $wp_customize->remove_section('nav');
 
 	// Uncomment the below lines to remove the default controls
 	// $wp_customize->remove_control('blogdescription');
+	$wp_customize->remove_control('site_icon');
 	
 	// Uncomment the following to change the default section titles
 	// $wp_customize->get_section('colors')->title = __( 'Theme Colors' );
 	// $wp_customize->get_section('background_image')->title = __( 'Images' );
+
+	$wp_customize->add_setting( 'theme_logo' );
+	$wp_customize->add_control( 
+		new WP_Customize_Image_Control(
+			$wp_customize,'theme_logo',array(
+				'label' => 'Logo',
+				'section' => 'title_tagline',
+				'settings' => 'theme_logo',
+				'priority' => 1
+			)
+		)
+	);
 }
 
 add_action( 'customize_register', 'bones_theme_customizer' );

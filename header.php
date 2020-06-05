@@ -40,6 +40,9 @@
 
 				<div id="inner-header" class="wrap cf">
 
+					<div>
+					<?php if( get_theme_mod( 'theme_logo' ) != '') { ?><a href="<?php echo home_url(); ?>" rel="nofollow"><img src="<?php echo get_theme_mod('theme_logo'); ?>"></a><?php } ?>
+					
 					<?php // to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> ?>
 					<?php if ( is_front_page() ) : ?>
 
@@ -50,6 +53,7 @@
 					<p id="logo" class="h1" itemscope itemtype="http://schema.org/Organization"><a href="<?php echo home_url(); ?>" rel="nofollow"><?php bloginfo('name'); ?></a></p>
 
 					<?php endif; ?>
+					</div>
 
 					<?php // if you'd like to use the site description you can un-comment it below ?>
 					<?php // bloginfo('description'); ?>

@@ -25,6 +25,30 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 }
 
+#inner-header {
+	& > div {
+		display: flex;
+		align-items: center;
+		
+		& > a {
+			margin: 1em 1.5em 1em 0;
+			height: 4em;
+
+			img {
+				height: 100%;
+			}
+		}
+
+		div {
+			flex: 1;
+		}
+	}
+
+	.nav {
+		margin-top: 0;
+	}
+}
+
 // #container {
 // 	display: flex;
 // 	flex-direction: column;
