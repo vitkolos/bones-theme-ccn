@@ -249,4 +249,15 @@ function bones_comments( $comment, $args, $depth ) {
 <?php
 } // don't remove this bracket!
 
+// allows SVG upload (https://www.wplama.cz/wordpress-a-svg/)
+function add_file_types_to_uploads($file_types){
+
+    $new_filetypes = array();
+    $new_filetypes['svg'] = 'image/svg+xml';
+    $file_types = array_merge($file_types, $new_filetypes );
+
+    return $file_types;
+}
+add_action('upload_mimes', 'add_file_types_to_uploads');
+
 /* DON'T DELETE THIS CLOSING TAG */ ?>
