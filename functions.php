@@ -14,11 +14,19 @@ require_once( 'library/bones.php' );
 // CUSTOMIZE THE WORDPRESS ADMIN (off by default)
 // require_once( 'library/admin.php' );
 
-require_once "classes/class-naswp-helpers.php";
+
+// require_once( 'inc/naswp-utils.php' );
+
+require_once( 'classes/class-naswp-helpers.php' );
 $helpers = new NasWP_Helpers();
+
+require_once( 'settings.php' );
+$settings = new NasWP_Settings();
 
 $helpers->lightbox();
 $helpers->file_names();
+$helpers->mimes($settings->mimes);
+// $helpers->localization($settings->languages);
 
 /*********************
 LAUNCH BONES
@@ -248,16 +256,5 @@ function bones_comments( $comment, $args, $depth ) {
 	<?php // </li> is added by WordPress automatically ?>
 <?php
 } // don't remove this bracket!
-
-// allows SVG upload (https://www.wplama.cz/wordpress-a-svg/)
-function add_file_types_to_uploads($file_types){
-
-    $new_filetypes = array();
-    $new_filetypes['svg'] = 'image/svg+xml';
-    $file_types = array_merge($file_types, $new_filetypes );
-
-    return $file_types;
-}
-add_action('upload_mimes', 'add_file_types_to_uploads');
 
 /* DON'T DELETE THIS CLOSING TAG */ ?>
