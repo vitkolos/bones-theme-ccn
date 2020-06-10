@@ -16,18 +16,21 @@ if (!class_exists('NasWP_Settings')) {
 			'de' => 'de_DE',
 		);
 
-		// public $menus = array(
-		// 	'en' => array(
-		// 		'primary' => 4,
-		// 	),
-		// 	'de' => array(
-		// 		'primary' => 5,
-		// 	),
-		// );
+		public $menus = array(
+			'en' => array(
+				'main-nav' => 5,
+			),
+			'fr' => array(
+				'main-nav' => 2,
+			),
+			'de' => array(
+				'main-nav' => 2,
+			),
+		);
 
-		// public $sidebars = array(
-		// 	'sidebar1' => 'Sidebar 1',
-		// );
+		public $sidebars = array(
+			'sidebar1' => 'Sidebar 1',
+		);
 
 		public $mimes = array(
 			'svg' => 'image/svg+xml'

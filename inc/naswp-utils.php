@@ -11,8 +11,12 @@ function naswp_is_lang($lang)
 
 	$path_parts = explode('/', $_SERVER['REQUEST_URI']);
 
-	if (isset($path_parts[1]) && $path_parts[1] === $lang) {
-		return true;
+	if(isset($path_parts[0])) {
+		foreach ($path_parts as $path_part) {
+			if($path_part === $lang) {
+				return true;
+			}
+		}
 	}
 
 	return false;

@@ -15,18 +15,18 @@ require_once( 'library/bones.php' );
 // require_once( 'library/admin.php' );
 
 
+// NASWP
 // require_once( 'inc/naswp-utils.php' );
-
 require_once( 'classes/class-naswp-helpers.php' );
-$helpers = new NasWP_Helpers();
-
 require_once( 'settings.php' );
+$helpers = new NasWP_Helpers();
 $settings = new NasWP_Settings();
-
 $helpers->lightbox();
 $helpers->file_names();
 $helpers->mimes($settings->mimes);
-// $helpers->localization($settings->languages);
+// $helpers->localization($settings->languages, $settings->menus, $settings->sidebars);
+// NASWP
+
 
 /*********************
 LAUNCH BONES
