@@ -19,6 +19,11 @@ function naswp_is_lang($lang)
 		}
 	}
 
+	if((!empty($_GET['lang']) && $_GET['lang'] === $lang) ||
+		(!empty($_POST['lang']) && $_POST['lang'] === $lang)) {
+		return true;
+	}
+
 	return false;
 }
 

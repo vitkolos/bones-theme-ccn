@@ -16,7 +16,7 @@ require_once( 'library/bones.php' );
 
 
 // NASWP
-// require_once( 'inc/naswp-utils.php' );
+require_once( 'inc/naswp-utils.php' );
 require_once( 'classes/class-naswp-helpers.php' );
 require_once( 'settings.php' );
 $helpers = new NasWP_Helpers();
@@ -24,7 +24,7 @@ $settings = new NasWP_Settings();
 $helpers->lightbox();
 $helpers->file_names();
 $helpers->mimes($settings->mimes);
-// $helpers->localization($settings->languages, $settings->menus, $settings->sidebars);
+$helpers->localization($settings->languages, $settings->menus, $settings->sidebars);
 // NASWP
 
 
