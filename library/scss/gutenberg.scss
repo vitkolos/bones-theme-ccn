@@ -1,0 +1,27 @@
+figure.wp-block-image.social-proof, .wp-block-image.social-proof figure {
+	display: flex;
+	position: relative;
+
+	& > :first-child {
+		flex-shrink: 0;
+		max-width: 20%;
+	}
+
+	figcaption {
+		text-align: left;
+		margin-left: 20px;
+	}
+
+	margin-right: 0;
+	margin-left: 0;
+}
+
+.wp-block-image.social-proof figure.alignright, [data-align="right"] figure.wp-block-image.social-proof {
+	flex-direction: row-reverse;
+
+	figcaption {
+		text-align: right;
+		margin-right: 20px;
+		margin-left: 0;
+	}
+}

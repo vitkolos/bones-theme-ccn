@@ -72,6 +72,8 @@ function bones_ahoy() {
 	// cleaning up excerpt
 	add_filter( 'excerpt_more', 'bones_excerpt_more' );
 
+	add_action('enqueue_block_editor_assets', 'bones_gutenberg_css');
+
 } /* end bones ahoy */
 
 // let's get this party started

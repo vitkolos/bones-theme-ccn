@@ -14,18 +14,17 @@ jQuery(document).ready(function($) {
 				baguetteBox.run('.wp-block-image', {
 						captions: function(element) {
 							if(element.parentNode.getElementsByTagName('figcaption').length) {
-								return element.parentNode.getElementsByTagName('figcaption')[0].textContent;
+								return element.parentNode.getElementsByTagName('figcaption')[0].innerHTML;
 							}
 						}
 				});
-				console.log('✔');
 		}
 		
 		if($('.wp-block-gallery').length ) { 
 				baguetteBox.run('.wp-block-gallery', {
 						captions: function(element) {
 							if(element.parentNode.getElementsByTagName('figcaption').length) {
-								return element.parentNode.getElementsByTagName('figcaption')[0].textContent;
+								return element.parentNode.getElementsByTagName('figcaption')[0].innerHTML;
 							}
 						}
 				});
