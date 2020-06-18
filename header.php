@@ -40,20 +40,26 @@
 
 				<div id="inner-header" class="wrap cf">
 
-					<div>
-					<?php if( get_theme_mod( 'theme_logo' ) != '') { ?><a href="<?php echo home_url(); ?>" rel="nofollow"><img src="<?php echo get_theme_mod('theme_logo'); ?>"></a><?php } ?>
-					
 					<?php // to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> ?>
 					<?php if ( is_front_page() ) : ?>
 
-					<h1 id="logo" itemscope itemtype="http://schema.org/Organization"><a href="<?php echo home_url(); ?>" rel="nofollow"><?php bloginfo('name'); ?></a></h1>
+					<h1 id="logo" itemscope itemtype="http://schema.org/Organization">
+						<a href="<?php echo home_url(); ?>" rel="nofollow" class="flex-logo">
+							<?php if( get_theme_mod( 'theme_logo' ) != '') { ?><img src="<?php echo get_theme_mod('theme_logo'); ?>"><?php } ?>
+							<span><?php bloginfo('name'); ?></span>
+						</a>
+					</h1>
 
 					<?php else : ?>
 
-					<p id="logo" class="h1" itemscope itemtype="http://schema.org/Organization"><a href="<?php echo home_url(); ?>" rel="nofollow"><?php bloginfo('name'); ?></a></p>
+					<p id="logo" class="h1" itemscope itemtype="http://schema.org/Organization">
+						<a href="<?php echo home_url(); ?>" rel="nofollow" class="flex-logo">
+							<?php if( get_theme_mod( 'theme_logo' ) != '') { ?><img src="<?php echo get_theme_mod('theme_logo'); ?>"><?php } ?>
+							<span><?php bloginfo('name'); ?></span>
+						</a>
+					</p>
 
 					<?php endif; ?>
-					</div>
 
 					<?php // if you'd like to use the site description you can un-comment it below ?>
 					<?php // bloginfo('description'); ?>

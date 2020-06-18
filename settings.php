@@ -18,7 +18,7 @@ if (!class_exists('NasWP_Settings')) {
 
 		public $menus = array(
 			'en' => array(
-				'main-nav' => 5,
+				'main-nav' => 3,
 			),
 			'fr' => array(
 				'main-nav' => 2,

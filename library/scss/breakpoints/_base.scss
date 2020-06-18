@@ -25,28 +25,31 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 }
 
-#inner-header {
-	& > div {
-		display: flex;
-		align-items: center;
-		
-		& > a {
-			margin: 1em 1.5em 1em 0;
-			height: 4em;
+.flex-logo {
+	display: flex;
+	align-items: center;
 
-			img {
-				height: 100%;
-			}
-		}
+	@media only screen and (max-width: 680px) {
+		flex-direction: column;
+		align-items: flex-start;
 
-		div {
-			flex: 1;
+		img {
+			margin-bottom: 1rem;
 		}
 	}
 
-	.nav {
-		margin-top: 0;
+	img {
+		margin-right: 1.5rem;
+		height: 4rem;
 	}
+
+	div {
+		flex: 1;
+	}
+}
+
+#inner-header .nav {
+    margin-top: 0;
 }
 
 // #container {
@@ -271,7 +274,7 @@ h5,
 
 h1,
 .h1 {
-	font-size: 2.5em;
+	font-size: 2.1em;
 	line-height: 1.333em;
 }
 
@@ -310,7 +313,7 @@ HEADER STYLES
 }
 
 #logo {
-	margin: 0.75em 0;
+	margin: 0.75em 0 0.35em 0;
 
 	a {
 		color: $p-contrast;
@@ -332,10 +335,12 @@ and more scalable.
 .nav {
 	border-bottom: 0;
 	margin-left: -1em;
+	padding: 0;
 
 	li {
 		float: left;
 		position: relative;
+		list-style-type: none;
 
 		a {
 			font-weight: bold;
@@ -396,9 +401,9 @@ and more scalable.
 	/* end .menu li */
 
 	/* highlight current page */
-	li.current-menu-item,
-	li.current_page_item,
-	li.current_page_ancestor {
+	li.menu-item-type-post_type.current-menu-item,
+	li.menu-item-type-post_type.current_page_item,
+	li.menu-item-type-post_type.current_page_ancestor {
 
 		a {
 			color: $p-contrast;
@@ -419,6 +424,7 @@ POSTS & CONTENT STYLES
 
 #content {
 	margin-top: 1.5em;
+	margin-bottom: 3em;
 }
 
 .hentry {
@@ -497,7 +503,8 @@ POSTS & CONTENT STYLES
 .entry-content {
 
 	p,
-	hr {
+	hr,
+	figure {
 		margin: 0 0 1.5em;
 	}
 
@@ -509,8 +516,15 @@ POSTS & CONTENT STYLES
 
 	ul,
 	ol {
+		margin: 0 0 1.5em;
 
-		li {}
+		li {
+			margin-bottom: 10px;
+
+			ul, ol {
+				margin-top: 10px;
+			}
+		}
 
 	}
 
@@ -530,6 +544,8 @@ POSTS & CONTENT STYLES
 		width: 100%;
 		border: 1px solid $gray;
 		margin-bottom: 1.5em;
+		border-collapse: collapse;
+		margin-bottom: 0;
 
 		caption {
 			margin: 0 0 7px;
@@ -549,7 +565,7 @@ POSTS & CONTENT STYLES
 	}
 
 	td {
-		padding: 7px;
+		padding: 7px 14px;
 		border-right: 1px solid $gray;
 
 		&:last-child {
@@ -1142,6 +1158,7 @@ FOOTER STYLES
 
 		&:hover {
 			text-decoration: underline;
+			color: $p-contrast;
 		}
 	}
 
