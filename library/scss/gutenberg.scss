@@ -1,3 +1,5 @@
+@import "partials/variables";
+
 figure.wp-block-image.social-proof, .wp-block-image.social-proof figure {
 	display: flex;
 	position: relative;
@@ -23,5 +25,26 @@ figure.wp-block-image.social-proof, .wp-block-image.social-proof figure {
 		text-align: right;
 		margin-right: 20px;
 		margin-left: 0;
+	}
+}
+
+.wp-block-button__link {
+	font-weight: bold;
+	color: $p-contrast !important;
+	text-decoration: none;
+	padding: 0.75em 1em;
+	border-radius: 0;
+	background-color: $primary;
+	transition: background-color 0.2s;
+
+	/*
+	remember this is for mobile ONLY, so there's no need
+	to even declare hover styles here, you can do it in
+	the style.scss file where it's relevant. We want to
+	keep this file as small as possible!
+	*/
+	&:hover,
+	&:focus {
+		background-color: darken($primary, 10%);
 	}
 }

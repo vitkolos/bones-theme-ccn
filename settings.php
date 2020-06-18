@@ -36,19 +36,17 @@ if (!class_exists('NasWP_Settings')) {
 			'svg' => 'image/svg+xml'
 		);
 
+		public $colors = array(
+			// 'Primary' => '#ffcb23',
+			// 'Contrast' => 'rgba(0, 0, 0, .9)',
+			'Primary' => '#70543D',
+			'Contrast' => 'rgba(255, 255, 255, .9)',
+		);
 
-		// public $colors = array(
-		// 	'Light' => '#EAF7FF',
-		// 	'Blue Light' => '#96D8FF',
-		// 	'Blue Dark' => '#0459AA',
-		// 	'Dark' => '#002140',
-		// 	'Blue Bright' => '#00B7FF',
-		// );
-
-		// public $gradients = array(
-		// 	'Light' => 'linear-gradient(90deg, rgba(0,183,255,1) 0%, rgba(4,89,170,1) 100%)',
-		// 	'Dark' => 'linear-gradient(90deg, rgba(4,89,170,1) 0%, rgba(0,33,64,1) 100%)',
-		// );
+		public $gradients = array(
+			// 'Light' => 'linear-gradient(90deg, rgba(0,183,255,1) 0%, rgba(4,89,170,1) 100%)',
+			// 'Dark' => 'linear-gradient(90deg, rgba(4,89,170,1) 0%, rgba(0,33,64,1) 100%)',
+		);
 
 	}
 }

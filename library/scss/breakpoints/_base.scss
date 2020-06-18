@@ -351,7 +351,10 @@ and more scalable.
 			keep this file as small as possible!
 			*/
 			&:hover,
-			&:focus {}
+			&:focus {
+				color: $p-contrast-lig;
+				text-decoration: underline;
+			}
 		}
 
 		&:first-child {}
@@ -1178,3 +1181,19 @@ FOOTER STYLES
 }
 
 /* end .footer-links */
+
+.has-primary-color {
+	color: $primary;
+}
+
+.has-primary-background-color {
+	background-color: $primary;
+}
+
+.has-contrast-color {
+	color: $p-contrast;
+}
+
+.has-contrast-background-color {
+	background-color: $p-contrast;
+}

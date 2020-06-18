@@ -59,10 +59,7 @@ NAVIGATION STYLES
 			has the possibility of being a mobile device.
 			*/
 			&:hover,
-			&:focus {
-				color: $p-contrast-lig;
-				text-decoration: underline;
-			}
+			&:focus {}
 		}
 
 		&:first-child {}
