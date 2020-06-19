@@ -6,6 +6,9 @@ figure.wp-block-image.social-proof, .wp-block-image.social-proof figure {
 
 	& > :first-child {
 		flex-shrink: 0;
+	}
+
+	& > a:first-child {
 		max-width: 20%;
 	}
 
