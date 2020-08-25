@@ -21,7 +21,7 @@ if (!class_exists('NasWP_Settings')) {
 				'main-nav' => 3,
 			),
 			'fr' => array(
-				'main-nav' => 2,
+				'main-nav' => 4,
 			),
 			'de' => array(
 				'main-nav' => 2,

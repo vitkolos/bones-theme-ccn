@@ -69,6 +69,14 @@ function rw_title( $title, $sep, $seplocation ) {
 	// Add the blog description for the home/front page.
 	$site_description = get_bloginfo( 'description', 'display' );
 
+	$langs = array("cs"=>0,"en"=>1,"fr"=>2,"de"=>3);
+	$localeSubstr = substr(get_locale(), 0,2);
+	$langIndex = isset($langs[$localeSubstr]) ? $langs[$localeSubstr] : 0;
+
+	$descriptionArray = explode(" / ", $site_description);
+	$descriptionTranslated = isset($descriptionArray[$langIndex]) ? $descriptionArray[$langIndex] : $descriptionArray;
+	$site_description = $descriptionTranslated;
+
 	if ( $site_description && ( is_home() || is_front_page() ) ) {
 		$title .= " {$sep} {$site_description}";
 	}

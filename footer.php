@@ -18,8 +18,19 @@
 						)); ?>
 					</nav>
 					<div class="web-info">
-						<p><a href="/"><?php bloginfo( 'name' ); ?> – <?php bloginfo( 'description' ); ?></a></p>
-						<p class="last-p">Webové stránky vytvořil <a href="https://www.kolos.ga" target="_blank">Vít Kološ</a>.</p>
+						<?php
+							$langs = array("cs"=>0,"en"=>1,"fr"=>2,"de"=>3);
+            				$localeSubstr = substr(get_locale(), 0,2);
+							$langIndex = isset($langs[$localeSubstr]) ? $langs[$localeSubstr] : 0;
+
+							$description = get_bloginfo( 'description', 'display' );
+							$descriptionArray = explode(" / ", $description);
+							$descriptionTranslated = isset($descriptionArray[$langIndex]) ? $descriptionArray[$langIndex] : $descriptionArray;
+							
+							$stringArray = array("Webové stránky vytvořil", "This website was created by", "Les pages web ont été créées par", "Website erstellt von");
+						?>
+						<p><a href="/"><?php bloginfo( 'name' ); ?> – <?= $descriptionTranslated; ?></a></p>
+						<p class="last-p"><?= $stringArray[$langIndex] ?> <a href="https://www.kolos.ga" target="_blank">Vít Kološ</a>.</p>
 					</div>
 				</div>
 
