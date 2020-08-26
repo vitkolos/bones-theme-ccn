@@ -37,10 +37,10 @@ if (!class_exists('NasWP_Settings')) {
 		);
 
 		public $colors = array(
-			// 'Primary' => '#ffcb23',
-			// 'Contrast' => 'rgba(0, 0, 0, .9)',
-			'Primary' => '#70543D',
-			'Contrast' => 'rgba(255, 255, 255, .9)',
+			'Primary' => '#ffcb23',
+			'Contrast' => 'rgba(0, 0, 0, .9)',
+			// 'Primary' => '#70543D',
+			// 'Contrast' => 'rgba(255, 255, 255, .9)',
 		);
 
 		public $gradients = array(

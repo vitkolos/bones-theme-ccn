@@ -17,14 +17,14 @@ Need help w/ choosing your colors? Try this site out:
 http://0to255.com/
 *********************/
 
-// $primary: #ffcb23;
-// $p-contrast: rgba(0, 0, 0, .9);
-// $p-contrast-lig: rgba(0, 0, 0, .7);
-// $p-contrast-dis: rgba(0, 0, 0, .5);
-$primary: #70543D;
-$p-contrast: rgba(255, 255, 255, .9);
-$p-contrast-lig: rgba(255, 255, 255, .7);
-$p-contrast-dis: rgba(255, 255, 255, .5);
+$primary: #ffcb23;
+$p-contrast: rgba(0, 0, 0, .9);
+$p-contrast-lig: rgba(0, 0, 0, .7);
+$p-contrast-dis: rgba(0, 0, 0, .5);
+// $primary: #70543D;
+// $p-contrast: rgba(255, 255, 255, .9);
+// $p-contrast-lig: rgba(255, 255, 255, .7);
+// $p-contrast-dis: rgba(255, 255, 255, .5);
 
 $alert-yellow: #ebe16f;
 $alert-red: #fbe3e4;
@@ -41,7 +41,8 @@ $meta-gray: #999;
 
 $blue: #2980b9;
 
-$link-color: darken($primary, 20%);
+// $link-color: darken($primary, 20%);
+$link-color: darken($primary, 40%);
 $link-hover: darken($link-color, 9%);
 
 $border-color: #ccc;
